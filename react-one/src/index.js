@@ -5,10 +5,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import App from './App';
-import {createStore, applyMiddleware} from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import reducer from './Redux'
 import createSagaMiddleware from 'redux-saga'
-import {helloWorldSaga} from './Saga'
+import rootSaga from './Saga'
 
 // initialize middleware
 const saga = createSagaMiddleware()
@@ -19,7 +19,7 @@ console.log('#Redux is ready')
 console.log('#Saga is ready')
 
 // Start async launch code
-saga.run(helloWorldSaga)
+saga.run(rootSaga)
 
 // Launch the front end
 const doc: Document = document

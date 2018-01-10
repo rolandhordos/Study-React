@@ -19,7 +19,7 @@ const reducer = (state: State = initialState, action: any) => {
   console.log('inside reducer, action type is ' + action.type)
   let count = state.count
   switch (action.type) {
-    case types.INCREMENT, types.INCREMENT_ASYNC:
+    case types.INCREMENT:
       count = count + 1
       break
     case types.INCREMENT_IF_ODD:
