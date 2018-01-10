@@ -4,6 +4,7 @@ export const types = {
   INCREMENT: 'INCREMENT',
   INCREMENT_IF_ODD: 'INCREMENT_IF_ODD',
   DECREMENT: 'DECREMENT',
+  INCREMENT_ASYNC: 'INCREMENT_ASYNC',
 }
 
 type State = {
@@ -18,7 +19,7 @@ const reducer = (state: State = initialState, action: any) => {
   console.log('inside reducer, action type is ' + action.type)
   let count = state.count
   switch (action.type) {
-    case types.INCREMENT:
+    case types.INCREMENT, types.INCREMENT_ASYNC:
       count = count + 1
       break
     case types.INCREMENT_IF_ODD:

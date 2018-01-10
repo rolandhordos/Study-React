@@ -58,8 +58,9 @@ export default class App extends Component<Props, State> {
         <Counter
           count={count}
           onIncrement={() => this.handler(types.INCREMENT)}
-          onDecrement={() => this.handler(types.DECREMENT)} >
-        </Counter>
+          onDecrement={() => this.handler(types.DECREMENT)}
+          onIncrementAsync={() => this.handler(types.INCREMENT_ASYNC)} 
+        />
       </div>
     )
   }
