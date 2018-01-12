@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Sagas Increment Async Generator 1`] = `
+Object {
+  "done": false,
+  "value": Promise {
+    "@@redux-saga/CANCEL_PROMISE": [Function],
+  },
+}
+`;
+
+exports[`App Sagas Increment Async Generator 2`] = `
+Object {
+  "done": false,
+  "value": Object {
+    "@@redux-saga/IO": true,
+    "PUT": Object {
+      "action": Object {
+        "type": "INCREMENT",
+      },
+      "channel": null,
+    },
+  },
+}
+`;
+
+exports[`App Sagas Uses Redux middleware to increment asynchronously 1`] = `
+Object {
+  "count": 1,
+}
+`;
+
+exports[`Hello World Provides an asynchronous generator 1`] = `
+Object {
+  "done": false,
+  "value": Promise {
+    "@@redux-saga/CANCEL_PROMISE": [Function],
+  },
+}
+`;
